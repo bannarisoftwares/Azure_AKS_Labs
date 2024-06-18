@@ -24,7 +24,7 @@ terraform {
 		organization = "dculus"
 
 		workspaces {
-			name = "dculus-global-dev"
+			name = "dculus-github-ci"
 		}
 	}
 }
