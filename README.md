@@ -9,3 +9,4 @@ This repo contains Terraform code to create AKS and Specification file to deploy
 4. kubectl port-forward --namespace monitoring svc/prometheus-kube-prometheus-prometheus 9090
 5. kubectl port-forward --namespace monitoring svc/prometheus-grafana 8080:80
 6. grafan user name : "admin" , password : "prom-operator"
+7. 
