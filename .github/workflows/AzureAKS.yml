@@ -60,3 +60,6 @@ jobs:
           sleep 40
           kubectl get service store-front
           rm -rf ~/.kube
+
+      - name: Terraform destroy
+        run: terraform plan -destroy          
