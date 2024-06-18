@@ -1,7 +1,7 @@
 name: Create Azure AKS With Terraform
 on:
   push:
-    branches: [ master,dev,prod,main ]
+    branches: [ master,dev,prod,main ]  
 
 permissions:
       id-token: write
@@ -53,10 +53,10 @@ jobs:
       - name: Terraform Output
         run: terraform output
 
-      #- name: Deploy Application
-      #  run: |
-      #    az aks get-credentials -n "cluster-bursting-jennet" -g "rg-refined-swine"
-      #    kubectl apply -f ./AKSApp/aks-store-quickstart.yaml
-      #    sleep 40
-      #    kubectl get service store-front
-      #    rm -rf ~/.kube
+      - name: Deploy Application
+        run: |
+          az aks get-credentials -n "cluster-bursting-jennet" -g "rg-refined-swine"
+          kubectl apply -f ./AKSApp/aks-store-quickstart.yaml
+          sleep 40
+          kubectl get service store-front
+          rm -rf ~/.kube
