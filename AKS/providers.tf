@@ -24,7 +24,7 @@ terraform {
 		organization = "dculus"
 
 		workspaces {
-			name = "AzureAKSLabs"
+			name = "dculus-global-dev"
 		}
 	}
 }
